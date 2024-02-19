@@ -15,10 +15,6 @@ public class AbcHomePage extends TestBase {
 	}
 
 	public AbcRegisterPage signUpButtonClick() throws InterruptedException {
-		Shadow ds = new Shadow(driver);
-		WebElement element =ds.findElementByXPath("//*[@id='email-input'])");
-		Thread.sleep(1000);
-		element.sendKeys("David");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement signup = (WebElement) js.executeScript(
 				"return document.querySelector(\"body > route-view\").shadowRoot.querySelector(\"#page-component\").shadowRoot.querySelector(\"main-layout > header > home-header > authstate-context:nth-child(3) > signup-button\")");
