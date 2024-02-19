@@ -21,7 +21,8 @@ public class AbcSubscriptionPage extends TestBase {
 		// TODO Auto-generated method stub
 		return driver.getCurrentUrl();
 	}
-
+	// Requirement 5-Verify that on subscription page, “new-member-signup-page” text is
+	// rendered.
 	public String verifySubPagegetText() {
 		String actualString = subTextmsg.getAttribute("subTextmsg");
 		System.out.println(actualString);
